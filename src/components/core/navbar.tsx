@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Container } from "./Container";
-// import { NewELafda } from "./new-e-lafda";
+import { NewELafda } from "./new-e-lafda";
  import { ThemeToggle } from "./theme-toggle";
 
 const navItems = [
@@ -52,7 +52,7 @@ function Navbar() {
 
         {/* User actions */}
         <div className="flex items-center gap-4">
-          {/* <NewELafda /> */}
+          <NewELafda />
           <ThemeToggle />
         </div>
       </div>
