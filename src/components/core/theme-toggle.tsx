@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+
 import { motion, useMotionValue, useTransform } from "motion/react";
+
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -12,6 +14,7 @@ function ThemeToggle({ className }: { className?: string }) {
   const isDark = (resolvedTheme ?? theme) === "dark";
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
 

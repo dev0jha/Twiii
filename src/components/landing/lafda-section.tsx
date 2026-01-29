@@ -1,9 +1,11 @@
 import React from "react";
 import Link from "next/link";
+
 import { LafdaCard } from "@/components/lafda/lafda-card";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { mockLafdaData } from "@/mock-data/mock-lafda-data";
+import { mockLafdaData, type LafdaCardData } from "@/mock-data/mock-lafda-data";
+
 import { SectionSubheading } from "./section-subheading";
 
 function LafdaSection() {
@@ -25,7 +27,7 @@ function LafdaSection() {
           "xl:grid-cols-2"
         )}
       >
-        {visibleLafda.map((card: any) => (
+        {visibleLafda.map((card: LafdaCardData) => (
           <LafdaCard key={card.id} data={card} />
         ))}
       </div>

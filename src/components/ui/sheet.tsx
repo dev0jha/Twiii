@@ -2,6 +2,7 @@
 
 import { Dialog as SheetPrimitive } from "@base-ui/react/dialog";
 import { XIcon } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
@@ -48,7 +49,8 @@ function SheetViewport({
         side === "top" && "grid grid-rows-[auto_1fr] pb-12",
         side === "left" && "flex justify-start",
         side === "right" && "flex justify-end",
-        variant === "inset" && "sm:p-4"
+        variant === "inset" && "sm:p-4",
+        className
       )}
       data-slot="sheet-viewport"
       {...props}

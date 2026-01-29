@@ -2,12 +2,14 @@
 
 import { useState } from "react";
 import Link from "next/link";
+
 import {
   ArrowFatDownIcon,
   ArrowFatUpIcon,
   EyeIcon,
   FireIcon,
 } from "@phosphor-icons/react";
+
 import { Badge, Button, Card, cn } from "@/components/ui";
 
 export interface LafdaCardData {

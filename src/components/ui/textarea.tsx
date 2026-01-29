@@ -1,8 +1,10 @@
 "use client";
 
 import type * as React from "react";
+
 import { Field as FieldPrimitive } from "@base-ui/react/field";
 import { mergeProps } from "@base-ui/react/merge-props";
+
 import { cn } from "@/lib/utils";
 
 type TextareaProps = React.ComponentProps<"textarea"> & {

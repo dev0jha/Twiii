@@ -57,7 +57,7 @@ jobs:
           run: bun install
 
         - name: Check types
-          run: bun run check-types
+          run: bun run check-type
 
   build:
     name: build

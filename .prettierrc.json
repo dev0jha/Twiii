@@ -14,13 +14,12 @@
   "importOrder": [
     "^react",
     "^next",
+    "",
     "<THIRD_PARTY_MODULES>",
+    "",
     "^@repo/(.*)$",
     "^@/(.*)$",
+    "",
     "^[./]"
-  ],
-  "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true,
-  "importOrderGroupNamespaceSpecifiers": true,
-  "importOrderCaseInsensitive": true
+  ]
 }
