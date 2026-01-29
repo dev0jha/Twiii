@@ -2,14 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
-
 import {
   ArrowFatDownIcon,
   ArrowFatUpIcon,
   EyeIcon,
   FireIcon,
 } from "@phosphor-icons/react";
-
 import { Badge, Button, Card, cn } from "@/components/ui";
 
 export interface LafdaCardData {
@@ -83,7 +81,7 @@ function LafdaCard({ className, data }: LafdaCardProps) {
 
         {/* Title */}
         <Link href={`/lafda/${data.id}`}>
-          <h3 className="mt-4 line-clamp-2 min-h-12 text-xl font-semibold leading-tight tracking-tight">
+          <h3 className="mt-4 line-clamp-2 min-h-12 text-xl leading-tight font-semibold tracking-tight">
             {data.title}
           </h3>
         </Link>

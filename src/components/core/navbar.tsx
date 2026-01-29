@@ -1,11 +1,9 @@
 import React from "react";
-
 import Image from "next/image";
 import Link from "next/link";
-
 import { Container } from "./Container";
 import { NewELafda } from "./new-e-lafda";
- import { ThemeToggle } from "./theme-toggle";
+import { ThemeToggle } from "./theme-toggle";
 
 const navItems = [
   {

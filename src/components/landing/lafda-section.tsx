@@ -1,11 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { Button} from "@/components/ui/button";
-
-import { mockLafdaData } from "@/mock-data/mock-lafda-data";
-
 import { LafdaCard } from "@/components/lafda/lafda-card";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { mockLafdaData } from "@/mock-data/mock-lafda-data";
 import { SectionSubheading } from "./section-subheading";
 
 function LafdaSection() {

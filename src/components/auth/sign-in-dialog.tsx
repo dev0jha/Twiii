@@ -1,12 +1,9 @@
 "use client";
+
 import React from "react";
-
 import Link from "next/link";
-
 import { GoogleLogoIcon, XLogoIcon } from "@phosphor-icons/react/dist/ssr";
-
 import { Button, buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import {
   Dialog,
   DialogContent,
@@ -16,6 +13,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { cn } from "@/lib/utils";
 
 function SignInDialog({ triggerLabel }: { triggerLabel: string }) {
   return (

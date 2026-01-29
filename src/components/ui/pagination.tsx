@@ -1,5 +1,6 @@
 "use client";
 
+import type * as React from "react";
 import { mergeProps } from "@base-ui/react/merge-props";
 import { useRender } from "@base-ui/react/use-render";
 import {
@@ -7,10 +8,8 @@ import {
   ChevronRightIcon,
   MoreHorizontalIcon,
 } from "lucide-react";
-import type * as React from "react";
-
+import { buttonVariants, type Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { type Button, buttonVariants } from "@/components/ui/button";
 
 function Pagination({ className, ...props }: React.ComponentProps<"nav">) {
   return (
@@ -61,7 +60,7 @@ function PaginationLink({
             size,
             variant: isActive ? "outline" : "ghost",
           }),
-          className,
+          className
         ),
     "data-active": isActive,
     "data-slot": "pagination-link",

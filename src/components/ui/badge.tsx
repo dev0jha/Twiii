@@ -3,7 +3,6 @@
 import { mergeProps } from "@base-ui/react/merge-props";
 import { useRender } from "@base-ui/react/use-render";
 import { cva, type VariantProps } from "class-variance-authority";
-
 import { cn } from "@/lib/utils";
 
 const badgeVariants = cva(
@@ -36,7 +35,7 @@ const badgeVariants = cva(
         warning: "bg-warning/8 text-warning-foreground dark:bg-warning/16",
       },
     },
-  },
+  }
 );
 
 interface BadgeProps extends useRender.ComponentProps<"span"> {

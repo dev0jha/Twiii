@@ -1,8 +1,7 @@
-import { Container } from '@/components/core/Container'
-import { Navbar } from '@/components/core/navbar'
-import { LafdaSection } from '@/components/landing/lafda-section'
-
-import React from 'react'
+import React from "react";
+import { Container } from "@/components/core/Container";
+import { Navbar } from "@/components/core/navbar";
+import { LafdaSection } from "@/components/landing/lafda-section";
 
 export default function page() {
   return (
@@ -10,5 +9,5 @@ export default function page() {
       <Navbar />
       <LafdaSection />
     </Container>
-  )
+  );
 }
