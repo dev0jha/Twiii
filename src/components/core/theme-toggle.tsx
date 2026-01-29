@@ -1,6 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 import { motion, useMotionValue, useTransform } from "motion/react";
 
@@ -9,7 +10,25 @@ import { Button } from "@/components/ui/button";
 
 function ThemeToggle({ className }: { className?: string }) {
   const { setTheme, resolvedTheme, theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const isDark = (resolvedTheme ?? theme) === "dark";
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <Button
+        className={cn("px-2.5", className)}
+        variant="outline"
+        aria-label="Toggle theme"
+      >
+        <div className="w-5 h-5" />
+      </Button>
+    );
+  }
+
   return (
     <Button
       onClick={() => setTheme(isDark ? "light" : "dark")}
